@@ -1,0 +1,629 @@
+@import url("reset.css");
+@import url("fonts/fonts.css");
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9e9e9;
+    font-weight: lighter;
+    font-size: 13px;
+}
+li span {
+    padding: 0 3px;
+}
+header a,
+header li span {
+    color: #8e8e8e;
+}
+a {
+    color: #555;
+    text-decoration: none;
+}
+a:hover {
+    color: #dd5555;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.bib {
+    display: inline-block;
+}
+
+/* Topmenu */
+header {
+    height: 44px;
+    border-bottom: 1px solid #bfbfbf;
+}
+footer {
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid #bfbfbf;
+}
+header,
+footer {
+    box-shadow: 0 0 2px 1px #BFBFBFBF;
+    background-color: #fff;
+}
+header .container {
+    height: 100%;
+}
+.topmenu1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.topmenu1 .socials {
+    display: flex;
+}
+.topmenu1 .soc-left,
+.topmenu1 .soc-right {
+    display: flex;
+}
+.topmenu1 .soc-right li {
+    margin-left: 15px;
+}
+.topmenu1 .soc-right a {
+    display: block;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+}
+.topmenu1 .soc-right a.twitter,
+footer .soc2 .twitter:before {
+    background-image: url("imgs/twitter.png");
+}
+.topmenu1 .soc-right a.vimeo,
+footer .soc2 .vimeo:before {
+    background-image: url("imgs/vimeo.png");
+}
+.topmenu1 .soc-right a.facebook,
+footer .soc2 .facebook:before {
+    background-image: url("imgs/facebook.png");
+    width: 7px;
+}
+.topmenu1 .soc-right a.instagram,
+footer .soc2 .instagram:before {
+    background-image: url("imgs/instagram.png");
+    width: 12px;
+}
+.topmenu1 .soc-right a.dribbble,
+footer .soc2 .dribbble:before {
+    background-image: url("imgs/dribbble.png");
+}
+.topmenu1 .soc-right a.reddit,
+footer .soc2 .reddit:before {
+    background-image: url("imgs/reddit.png");
+}
+
+.topmenu1 .soc-right a.twitter:hover,
+.topmenu1 .soc-right a.vimeo:hover,
+.topmenu1 .soc-right a.dribbble:hover,
+.topmenu1 .soc-right a.reddit:hover,
+.topmenu1 .soc-right a.facebook:hover,
+.topmenu1 .soc-right a.instagram:hover,
+footer .soc2 .twitter:hover:before,
+footer .soc2 .vimeo:hover:before,
+footer .soc2 .facebook:hover:before,
+footer .soc2 .instagram:hover:before,
+footer .soc2 .dribbble:hover:before,
+footer .soc2 .reddit:hover:before {
+    background-position: 100% 0;
+}
+
+/* Content */
+/* Navbar */
+.topmenu2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #bfbfbf;
+}
+.topmenu2 > ul > li a {
+    /*color: red;*/
+    font-size: 14px;
+    font-weight: bold;
+}
+.topmenu2 li {
+    cursor: pointer;
+}
+.topmenu2 > ul > li:hover > a {
+    /*color: #dd5555;*/
+}
+.topmenu2 ul {
+    display: flex;
+    justify-content: space-between;
+    width: 84%;
+}
+.topmenu2 .submenu {
+    position: relative;
+    margin-right: 12px;
+    /*box-sizing: border-box;*/
+    /*padding-bottom: 10px;*/
+}
+.submenu div {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    margin-top: 14px;
+    z-index: 10;
+}
+.submenu ul {
+    display: block;
+    background-color: #fff;
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 3px 1px #9999;
+}
+.topmenu2 li:not(:first-child) {
+    /*margin-left: 20px;*/
+}
+.submenu ul a {
+    display: flex;
+    font-weight: normal !important;
+    align-items: center;
+    /*line-height: 20px;*/
+    height: 100%;
+    padding-left: 20px;
+}
+.submenu li {
+    height: 40px;
+    /*display: flex;*/
+    /*align-items: center;*/
+}
+.submenu li span {
+    /*color: inherit;*/
+}
+.submenu li:hover {
+    background-color: #dd5555;
+}
+.submenu li:hover a span {
+    color: #fff;
+}
+.submenu li a {
+}
+.submenu li a {
+    /*display: block;*/
+    /*height: 100%;*/
+}
+.submenu > a {
+    /*-*/
+}
+.submenu:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: rgba(255, 0, 0, 0) url("imgs/triangle.png") no-repeat right
+    center;
+    left: 50%;
+    height: 1em;
+    width: 1em;
+    margin-left: 7px;
+}
+.submenu:hover div,
+.submenu div:hover {
+    display: block;
+}
+form {
+    /*display: flex;*/
+    /*margin-left: 20px;*/
+    /*flex-basis: max-content;*/
+    /*display: block;*/
+    width: 14%;
+}
+.search {
+    width: calc(100% - 20px);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0 10px;
+    /*width: 50px;*/
+}
+.search input[type="search"] {
+    float: left;
+    display: block;
+    height: 100%;
+    width: calc(99% - 16px);
+    font-size: 12px;
+    border: 0;
+    background: 0;
+    color: #999;
+}
+.search input[type="image"] {
+    float: right;
+    width: 16px;
+    height: 16px;
+}
+
+/* Gallery */
+
+.gallery {
+    margin-top: 28px;
+}
+.gallery .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+}
+h1.heading {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 38px;
+    font-family: ml, sans-serif;
+    color: #333;
+}
+h1.heading span {
+    font-weight: bold;
+}
+p.subh {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 14px;
+    font-family: ml, sans-serif;
+    color: #999;
+}
+.card {
+    display: inline-block;
+    background-color: #fff;
+    /*width: 263px;*/
+    width: 23%;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 1px #9999;
+}
+.card img {
+    width: 100%;
+}
+.card .short {
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card .title {
+    font-size: 15px;
+    font-weight: bold;
+}
+.card .date {
+    font-size: 11px;
+    color: #afafaf;
+    margin: 12px 0;
+}
+.card .desc {
+    font-size: 12px;
+    color: #848484;
+}
+.card .img {
+    position: relative;
+}
+.card .img p {
+    position: absolute;
+    background-color: #fff;
+    margin: 10px;
+    padding: 7px 10px;
+    border-radius: 3px;
+    display: none;
+    box-shadow: 0 0 2px 1px #1115;
+}
+.card .img p span {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 14px;
+}
+.card span:before {
+    content: "";
+    display: block;
+    float: left;
+    z-index: 4;
+    margin-right: 6px;
+}
+.card .downloads:before {
+    background: url("imgs/download.png");
+    width: 18px;
+    height: 16px;
+}
+.card .likes:before {
+    background: url("imgs/like.png");
+    width: 19px;
+    height: 16px;
+    margin-left: 10px;
+}
+.card .img:hover img {
+    filter: brightness(70%);
+    z-index: 2;
+}
+.card .img:hover p {
+    display: block;
+    z-index: 3;
+}
+
+/* Page navbar */
+.pagenav {
+    margin-top: 13px;
+}
+.pagenav ul {
+    display: flex;
+    justify-content: center;
+}
+.pagenav ul li {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    margin: 0 4px;
+}
+.pagenav ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.pagenav ul li:not(.sp) {
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+.pagenav ul li.chosen {
+    border: 2px solid #dd5555;
+}
+.chosen a {
+    color: #dd5555;
+}
+
+/* Footer */
+.banner1 {
+    padding: 11px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: fit-content;
+    margin: 28px auto 0;
+    box-shadow: 0 0 3px 1px #9999;
+}
+.footer-top {
+    /*margin-top: 22px;*/
+    display: flex;
+    padding-top: 17px;
+    justify-content: space-between;
+}
+.description {
+    width: 30%;
+}
+.description p {
+    margin-top: 14px;
+    color: #999;
+    line-height: 20px;
+    font-size: 14px;
+}
+footer .socials {
+    display: flex;
+}
+footer .socials p {
+    color: #666;
+    font-weight: bold;
+}
+footer ul {
+    margin-top: 10px;
+    line-height: 24px;
+}
+footer .socials a {
+    margin-left: 2px;
+    color: #999;
+}
+footer .socials a:hover {
+    color: #dd5555;
+}
+footer .soc2 {
+    margin-left: 55px;
+}
+footer .soc2 li:before {
+    content: "";
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+    margin-top: 5px;
+    margin-right: 8px;
+    /*background-image: url("imgs/twitter.png");*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+}
+.banner2 {
+    margin-top: -17px;
+    margin-right: 11px;
+}
+.footer-bottom {
+    border-top: 1px solid #bfbfbf;
+    box-shadow: 0 0 2px 1px #BFBFBFBF;
+    margin-top: 23px;
+    height: 51px;
+    color: #999;
+}
+.footer-bottom a {
+    color: #999;
+}
+.footer-bottom a:hover {
+    color: #dd5555;
+}
+.footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.middle {
+    line-height: 51px;
+    /*vertical-align: middle;*/
+    /*display: block;*/
+    /*height: 100%;*/
+}
+.copy-left .links {
+    margin-left: 8px;
+    font-weight: bold;
+}
+a.skype {
+    color: #dd5555;
+    font-weight: bold;
+}
+
+/* DEV */
+body * {
+    /*border: 1px solid red;*/
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 940px;
+    }
+    .topmenu2 ul {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .topmenu2 > ul > li {
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container {
+        width: 700px;
+    }
+    .banner1 {
+        width: 90%;
+    }
+    .banner1 img {
+        width: 100%;
+    }
+    .footer-top {
+        display: block;
+    }
+    .footer-top > *:not(:last-child) {
+        width: 47%;
+    }
+    .footer-top .description {
+        float: left;
+    }
+    .footer-top .socials {
+        float: right;
+    }
+    .footer-top .banner2 {
+        text-align: center;
+        margin-right: 0;
+        clear: both;
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card .date {
+        font-size: 18px;
+    }
+    body, .topmenu1 a, .topmenu2 > ul > li a, .card .desc, .description p {
+        font-size: 20px;
+    }
+    .topmenu2 {
+        display: block;
+    }
+    .topmenu2 form {
+        width: 100%;
+    }
+    .topmenu2 > ul, .topmenu2 .search {
+        margin: 0 auto;
+    }
+    .topmenu2 .search {
+        width: 300px;
+        margin-top: 20px;
+    }
+    p.subh, .card .title {
+        font-size: 25px;
+    }
+    .container {
+        width: 528px;
+    }
+    .row {
+        display: block !important;
+    }
+    .row .card:nth-child(1),
+    .row .card:nth-child(3) {
+        float: left;
+    }
+    .row .card:nth-child(2),
+    .row .card:nth-child(4) {
+        float: right;
+    }
+    .card {
+        display: block;
+        width: 48%;
+        margin-top: 25px;
+        height: 392px;
+    }
+    .pagenav {
+        clear: both;
+        padding-top: 25px;
+    }
+    .topmenu1 {
+        display: block;
+    }
+    .topmenu1 {
+        text-align: center;
+    }
+    .topmenu1 .socials {
+        justify-content: center;
+        margin-top: 13px;
+    }
+    .footer-top > *:not(:last-child) {
+        width: 90%;
+        margin: 40px auto;
+    }
+    .footer-top .description {
+        text-align: center;
+        float: none;
+    }
+    .footer-top .socials {
+        justify-content: space-around;
+        float: none;
+    }
+    .footer-bottom, header {
+        height: auto;
+        padding: 20px 0;
+    }
+    .footer-bottom .container {
+        display: block;
+        text-align: center;
+        width: 95%;
+    }
+    .footer-bottom .container > * {
+        float: none;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 15px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+    }
+    .banner2, .banner2 img {
+        width: 100%;
+    }
+    .topmenu1 .socials {
+        display: block;
+    }
+    .topmenu1 .socials > * {
+        justify-content: center;
+    }
+    .topmenu1 .socials ul:first-child {
+        margin-bottom: 25px;
+    }
+    .topmenu2 .search {
+        width: 80%;
+    }
+}
+
+/* 1200, 992, 768, 576 */

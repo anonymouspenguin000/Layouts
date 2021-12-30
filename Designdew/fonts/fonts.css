@@ -1,0 +1,10 @@
+@font-face {
+    font-family: ml;
+    src: url('RobotoSlab-Light.woff') format('woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: ml;
+    src: url('RobotoSlab-Regular.woff') format('woff');
+    font-weight: bold;
+}

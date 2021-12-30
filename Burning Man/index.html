@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Burning Man</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="imgs/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+	<script src="hamburger.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+<div id="pubg" style="display: none">
+	<div class="popup tickets" id="book">
+		<div class="popup_text">
+			<h1>Book the tickets</h1>
+			<p class="popup_desc">One ticket costs $30</p>
+		</div>
+		<div class="popup_inter">Leave your e-mail, we'll write you soon<br>
+			<span class="custom_putin">
+				<input type="email" placeholder="example@domain.com" id="email">
+				<button id="ok">OK</button>
+			</span><br>
+			<div>
+				Captcha: <input type="checkbox" id="cap">
+			</div>
+			<i id="email_err">&nbsp;</i>
+		</div>
+		<span class="close">X</span>
+	</div>
+	<div class="popup contacts" id="cont">
+		<h1 class="popup_text">Contacts</h1>
+		<p>E-mail:<br>~ yee1@gmail.com<br>~ yee2@gmail.com<br>Phone: +1 234 567-89-01<br>Facebook: @yeef<br>LinkedIn: @yeelin</p>
+		<b class="close">X</b>
+	</div>
+</div>
+<header id="home">
+	<div class="container">
+		<div class="nav">
+			<img src="imgs/logo.svg" alt="Burning Man">
+			<ul class="menu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a onclick="tickets()">Tickets</a></li>
+				<li><a onclick="contacts()">Contacts</a></li>
+			</ul>
+			<a href="#" class="tel">+1 234 567-89-01</a>
+			<img src="imgs/hamburger.png" class="hamburger-icon">
+		</div>
+		<div class="offer">
+			<p>Not tne event. The life</p>
+			<h1>Burning MAN</h1>
+			<a class="btn" onclick="tickets()">Book the tickets</a>
+		</div>
+	</div>
+</header>
+<section class="about" id="about">
+	<div class="container">
+		<h2>About the event</h2>
+		<div class="left-about-block about-block">
+			<h3>Rebuilding the society</h3>
+			<p>Burning Man is a network of people inspired by the values reflected in the Ten Principles and united in the pursuit of a more creative and connected existence in the world. Throughout the year we work to build Black Rock City, home of the largest annual Burning Man gathering, and nurture the distinctive culture emerging from that experience.</p>
+		</div>
+		<div class="right-about-block about-block">
+			<h3>This drives us</h3>
+			<p>Burning Man Project will bring experiences to people in grand, awe-inspiring and joyful ways that lift the human spirit, address social problems, and inspire a sense of culture, community, and civic engagement. Burning Man provides infrastructural tools and frameworks to support local communities in applying the Ten Principles through six interconnected program areas, including Arts, Civic Involvement, Culture, Education, Philosophical Center, and Social Enterprise.</p>
+		</div>
+	</div>
+</section>
+<section class="gallery">
+	<div class="container">
+		<div class="gallery-block">
+			<img src="imgs/img1.jpg" alt="Gallery Image 1">
+			<img src="imgs/img2.jpg" alt="Gallery Image 2">
+			<img src="imgs/img3.jpg" alt="Gallery Image 3">
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="container">
+		<p><span>&copy; 1989-2020 Burning Man Project</span><span>WAYUP & Андрей Гаврилов</span></p>
+	</div>
+</footer>
+</body>
+</html>
